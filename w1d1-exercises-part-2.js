@@ -17,7 +17,6 @@ function beyond(num) {
 	if (num < 0) {
 	console.log("To negative infinity");
 }
-
 	if (num === 0) {
 	console.log("Staying home");
 }
@@ -87,6 +86,28 @@ switch (nameOfMonth) {
 
 
 
+function fizzBuzz(countTo) {
+
+var result = [] 
+let i = 1
+while (i < countTo) {
+switch (countTo) {
+  case countTo % 15 === 0:
+    result.push("fizzBuzz");
+    break;
+  case countTo % 5 === 0:
+    result.push("Buzz");
+    break;
+  case countTo % 3 === 0:
+    result.push("fizz");
+    break;
+  default:
+    result.push(countTo);
+}
+}
+}
+fizzBuzz(44);
+
 
 
 
@@ -132,26 +153,3 @@ function RockPaperScissors(userChoice){
 }
 
 RockPaperScissors("paper")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -25,9 +25,9 @@ function nameOfPerson(name) {
 	}
 }
 
-nameOfPerson(22)
+nameOfPerson("guy")
 
-console.log(yearOfBirth("3"));
+console.log(yearOfBirth("15"));
 
 
 function whoAmI(name, age) {
@@ -37,4 +37,4 @@ function whoAmI(name, age) {
 }
 	
 
-whoAmI("Bob", 12);
+whoAmI("Bob", 22);
