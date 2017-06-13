@@ -1,8 +1,5 @@
 function jediName (firstName, lastName) {
 
-//firstName.slice(0, 1);
-//lastName.slice(0, 2);
-
 console.log(`${lastName.slice(0, 3)}${firstName.slice(0, 2)}`)
 
 }
@@ -61,6 +58,88 @@ decode("bells")
 decode("brown")
 decode("croon")
 decode("droop")
+
+
+
+var nameOfMonth = "February";
+switch (nameOfMonth) {
+  case "January":
+  case "March":
+  case "May":
+  case "July":
+  case "August":
+  case "October":
+  case "December":
+    console.log(`${nameOfMonth} has 31 days`);
+    break;
+  case "February":
+    console.log(`${nameOfMonth} has 28 or 29 days`);
+    break;
+  case "April":
+  case "June":
+  case "September":
+  case "November":
+    console.log(`${nameOfMonth} has 30 days`);
+    break;
+  default:
+    console.log("please give a valid month");
+}
+
+
+
+
+
+
+function RockPaperScissors(userChoice){
+    var computer = 1 + Math.floor((Math.random()*3));
+    if (computer === 1) {
+    	computer = "rock"
+    }
+     if (computer === 2) {
+    	computer = "paper"
+    }
+    if (computer === 3) {
+    	computer = "scissors"
+    }
+
+    if (userChoice === "paper" && computer == "scissors") {
+    	console.log(`You chose ${userChoice} and the computer chose ${computer} - you lose`)
+    }
+   if (userChoice === "paper" && computer == "rock") {
+    	console.log(`You chose ${userChoice} and the computer chose ${computer} - you win`)
+    }
+    if (userChoice === "paper" && computer == "paper") {
+    	console.log(`You chose ${userChoice} and the computer chose ${computer} - you tied`)
+    }
+   if (userChoice === "rock" && computer == "scissors") {
+    	console.log(`You chose ${userChoice} and the computer chose ${computer} - you win`)
+    }
+   if (userChoice === "rock" && computer == "paper") {
+    	console.log(`You chose ${userChoice} and the computer chose ${computer} - you lose`)
+    }
+    if (userChoice === "rock" && computer == "rock") {
+    	console.log(`You chose ${userChoice} and the computer chose ${computer} - you tied`)
+    }
+    if (userChoice === "scissors" && computer == "paper") {
+    	console.log(`You chose ${userChoice} and the computer chose ${computer} - you win`)
+    }
+    if (userChoice === "scissors" && computer == "rock") {
+    	console.log(`You chose ${userChoice} and the computer chose ${computer} - you lose`)
+    }
+    if (userChoice === "scissors" && computer == "scissors") {
+    	console.log(`You chose ${userChoice} and the computer chose ${computer} - you tied`)
+    }
+}
+
+RockPaperScissors("paper")
+
+
+
+
+
+
+
+
 
 
 
